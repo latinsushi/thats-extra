@@ -16,6 +16,17 @@
     }
   })();
 
+  (function markLicensed() {
+    if (!hasLicense()) return;
+    var note = document.getElementById("checkout-note");
+    var btn = document.getElementById("checkout-btn");
+    if (note) note.textContent = "Licensed. PDFs download without the free-version line.";
+    if (btn) {
+      btn.textContent = "You're in";
+      btn.setAttribute("href", "#tool");
+    }
+  })();
+
   document.querySelectorAll("[data-copy]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var sel = btn.getAttribute("data-copy");
