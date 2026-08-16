@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>That's Extra. Charge for the extra ask in 60 seconds.</title>
+  <meta name="description" content="Charge for the extra ask in 60 seconds. For designers, developers, and consultants on fixed-price work. Write the email. Get a one-page PDF. $19 once.">
+  <meta name="theme-color" content="#f3eee4">
+  <meta property="og:title" content="That's Extra">
+  <meta property="og:description" content="Charge for the extra ask in 60 seconds.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='3' fill='%231b1714'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='16' font-style='italic' fill='%23f3eee4'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,640&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#tool">Skip to the tool</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">That's Extra</a>
+      <nav class="nav">
+        <a href="#tool">The tool</a>
+        <a href="scope-creep-email.html">Templates</a>
+        <a href="#price">$19</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">For designers, developers, and consultants on fixed-price work</p>
+        <h1>Charge for the extra ask in 60 seconds.</h1>
+        <p class="lede">The Slack that says “can you also…” You feel rude naming a price. Write the email. Attach the one-pager. Start after they approve.</p>
+        <p class="hero-actions">
+          <a class="btn btn-accent" href="#tool">Make a change request</a>
+          <a class="btn btn-ghost" href="#price">$19 once</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="tool" id="tool">
+      <div class="wrap">
+        <div class="tool-head">
+          <div>
+            <p class="eyebrow">The press</p>
+            <h2>Write the extra down.</h2>
+          </div>
+          <button type="button" class="btn btn-ghost" id="fill-example">Fill example</button>
+        </div>
+
+        <div class="tool-grid">
+          <form class="panel form" id="cr-form" autocomplete="on">
+            <div class="field-row">
+              <label class="field">
+                <span>Your name / business</span>
+                <input type="text" name="fromName" placeholder="Maya Chen Studio" required>
+              </label>
+              <label class="field">
+                <span>Client name</span>
+                <input type="text" name="clientName" placeholder="Northline Coffee" required>
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Project name</span>
+              <input type="text" name="projectName" placeholder="Website refresh" required>
+            </label>
+
+            <label class="field">
+              <span>Original scope</span>
+              <textarea name="originalScope" rows="4" placeholder="What was already agreed." required></textarea>
+            </label>
+
+            <label class="field">
+              <span>New ask</span>
+              <textarea name="newAsk" rows="4" placeholder="Paste the Slack. “Can you also…”" required></textarea>
+            </label>
+
+            <fieldset class="field">
+              <legend>Pricing mode</legend>
+              <div class="seg" role="radiogroup" aria-label="Pricing mode">
+                <label class="seg-opt">
+                  <input type="radio" name="pricingMode" value="hourly" checked>
+                  <span>Hourly</span>
+                </label>
+                <label class="seg-opt">
+                  <input type="radio" name="pricingMode" value="flat">
+                  <span>Flat fee</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="field-row field-hourly">
+              <label class="field">
+                <span>Hours</span>
+                <input type="number" name="hours" min="0" step="0.25" placeholder="8">
+              </label>
+              <label class="field">
+                <span>Hourly rate (USD)</span>
+                <input type="number" name="rate" min="0" step="1" placeholder="125">
+              </label>
+            </div>
+
+            <label class="field field-flat hidden">
+              <span>Flat fee (USD)</span>
+              <input type="number" name="flatFee" min="0" step="1" placeholder="1200">
+            </label>
+
+            <div class="field-row">
+              <label class="field">
+                <span>Original contract amount <em>(optional)</em></span>
+                <input type="number" name="originalAmount" min="0" step="1" placeholder="4800">
+              </label>
+              <label class="field">
+                <span>Timeline impact (days)</span>
+                <input type="number" name="timelineDays" min="0" step="1" value="0">
+              </label>
+            </div>
+
+            <fieldset class="field">
+              <legend>Tone</legend>
+              <div class="seg" role="radiogroup" aria-label="Tone">
+                <label class="seg-opt">
+                  <input type="radio" name="tone" value="friendly" checked>
+                  <span>Friendly</span>
+                </label>
+                <label class="seg-opt">
+                  <input type="radio" name="tone" value="firm">
+                  <span>Firm</span>
+                </label>
+                <label class="seg-opt">
+                  <input type="radio" name="tone" value="grateful">
+                  <span>Grateful</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <label class="field">
+              <span>Date</span>
+              <input type="date" name="date" required>
+            </label>
+
+            <p class="fee-line" id="fee-line" aria-live="polite"></p>
+          </form>
+
+          <aside class="preview-col">
+            <div class="panel preview" id="preview">
+              <div class="preview-meta">
+                <p class="eyebrow">Live email</p>
+                <p class="preview-subject" id="preview-subject"></p>
+              </div>
+              <div class="preview-body" id="preview-body"></div>
+            </div>
+            <div class="actions">
+              <button type="button" class="btn btn-accent" id="copy-email">Copy email</button>
+              <button type="button" class="btn btn-ink" id="download-pdf">Download PDF</button>
+            </div>
+            <p class="hint" id="action-hint" aria-live="polite"></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="pains" id="why">
+      <div class="wrap">
+        <p class="eyebrow">The moment</p>
+        <h2>The message already landed.</h2>
+        <ol class="pain-list">
+          <li>
+            <h3>“Can you also…”</h3>
+            <p>It shows up in Slack or email after the job is priced. A new page. A new round. A new integration. That is a new job.</p>
+          </li>
+          <li>
+            <h3>You feel rude charging</h3>
+            <p>So you search “scope creep email template” or ask r/freelance. You still rewrite it. You still sound unsure.</p>
+          </li>
+          <li>
+            <h3>Looking cheap</h3>
+            <p>A hedge like “this might cost more” undercuts you. A one-page change request looks like a shop that knows its worth.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="steps" id="how">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2>Three steps. Then send.</h2>
+        <ol class="step-list">
+          <li>
+            <span class="num">1</span>
+            <h3>Describe the extra</h3>
+            <p>Original scope. New ask. Paste the Slack if you want. The facts, not the feelings.</p>
+          </li>
+          <li>
+            <span class="num">2</span>
+            <h3>Set the fee and the tone</h3>
+            <p>Hourly or flat. Friendly, firm, or grateful. The facts stay the same.</p>
+          </li>
+          <li>
+            <span class="num">3</span>
+            <h3>Copy. Download. Send.</h3>
+            <p>A ready email. A one-page PDF with signature lines. Work starts after written approval.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="templates-strip" id="templates">
+      <div class="wrap">
+        <p class="eyebrow">Steal these first</p>
+        <h2>Free templates, then the priced PDF.</h2>
+        <div class="strip-links">
+          <a class="panel strip-card" href="scope-creep-email.html">
+            <h3>Scope creep email template</h3>
+            <p>How to charge a client for extra work without sounding rude. Copy it. Send it.</p>
+          </a>
+          <a class="panel strip-card" href="freelance-change-order.html">
+            <h3>Freelance change order</h3>
+            <p>A one-page change request template for fixed-price design and development work.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="price" id="price">
+      <div class="wrap price-inner">
+        <p class="eyebrow">The license</p>
+        <p class="price-figure">$19 <span>once</span></p>
+        <p class="price-copy">No subscription. No account. The tool lives in this browser. Watermark-free PDFs come with the license.</p>
+        <p>
+          <a class="btn btn-accent" href="#checkout-note" id="checkout-btn">Get That's Extra ($19)</a>
+        </p>
+        <p class="checkout-note" id="checkout-note">Checkout opens this week. The generator is free to try. Watermark-free PDF comes with the license.</p>
+        <p class="privacy">Nothing you type is uploaded. It stays in this browser.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="wordmark footer-mark">That's Extra</p>
+      <nav class="footer-links">
+        <a href="index.html">The tool</a>
+        <a href="scope-creep-email.html">Scope creep email template</a>
+        <a href="freelance-change-order.html">Freelance change order</a>
+        <a href="#price">$19</a>
+      </nav>
+      <p>Built by an autonomous AI agent. Not a human shop.</p>
+      <p class="colophon">A business document helper, not legal advice. 2026.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
