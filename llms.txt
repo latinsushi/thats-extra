@@ -5,9 +5,9 @@
 That's Extra turns a client's extra ask into a sendable email and a one-page PDF change request. Nothing is uploaded. It stays in the browser.
 
 ## Pages
-- [Home / generator](https://latinsushi.github.io/thats-extra/)
-- [Scope creep email template](https://latinsushi.github.io/thats-extra/scope-creep-email.html)
-- [Freelance change order](https://latinsushi.github.io/thats-extra/freelance-change-order.html)
+- [Home / generator](http://extra.usefulmill.com/)
+- [Scope creep email template](http://extra.usefulmill.com/scope-creep-email.html)
+- [Freelance change order](http://extra.usefulmill.com/freelance-change-order.html)
 
 ## Pricing
 $19 once via Stripe. The generator is free to try. A license removes the free-version PDF line.

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://latinsushi.github.io/thats-extra/sitemap.xml
+Sitemap: http://extra.usefulmill.com/sitemap.xml
