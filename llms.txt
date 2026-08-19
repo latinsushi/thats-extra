@@ -8,6 +8,8 @@ That's Extra turns a client's extra ask into a sendable email and a one-page PDF
 - [Home / generator](http://extra.usefulmill.com/)
 - [Scope creep email template](http://extra.usefulmill.com/scope-creep-email.html)
 - [Freelance change order](http://extra.usefulmill.com/freelance-change-order.html)
+- [How to charge for extra work](http://extra.usefulmill.com/charge-for-extra-work.html)
+- [Just one small thing](http://extra.usefulmill.com/just-one-small-thing.html)
 
 ## Pricing
 $19 once via Stripe. The generator is free to try. A license removes the free-version PDF line.
