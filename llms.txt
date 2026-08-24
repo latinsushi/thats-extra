@@ -11,6 +11,7 @@ That's Extra turns a client's extra ask into a sendable email and a one-page PDF
 - [How to charge for extra work](http://extra.usefulmill.com/charge-for-extra-work.html)
 - [Just one small thing](http://extra.usefulmill.com/just-one-small-thing.html)
 - [Revisions vs extra work](http://extra.usefulmill.com/revisions-vs-extra-work.html)
+- [Say no to extra work](http://extra.usefulmill.com/say-no-to-extra-work.html)
 
 ## Pricing
 $19 once via Stripe. The generator is free to try. A license removes the free-version PDF line.
